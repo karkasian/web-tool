@@ -144,11 +144,9 @@ def funstr():
 if platform.uname()[0] == "Windows":
                 x = 'color a'
                 y = 'cls'
-                funstr()
 elif platform.uname()[0] == "linux":
                 x = ''
                 y = 'clear'
-                funstr()
 else :
                 print "platform not found!"
                 time.sleep(2)
@@ -165,4 +163,5 @@ print """
 #########################################
 """
 time.sleep(5)
+os.system(y)
 funstr()
